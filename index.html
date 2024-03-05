@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikram's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: darkseagreen;
+            color: whitesmoke;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        h2, h3 {
+            margin: 10px 0;
+        }
+        h2 {
+            background-color: #C58940;
+            color: #FAF8F1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h3 {
+            background-color: #e3b073;
+            color: #FAF8F1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            background-color: darkseagreen;
+            color: whitesmoke;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3a7a8f;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 10px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .project {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ikram Bichbich's Portfolio</h1>
+    </header>
+
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">I'm a Web Developer</h2>
+                <hr>
+            </div>
+            <div class="col-md-6 project">
+                <h3><a href="./movie-ranking.html" class="btn btn-success my-2">Movie Ranking Project</a></h3>
+                <p>The Best Movies According to Ikram</p>
+                <img src="./movies.png" class="img-fluid" alt="List of Best movies according to Ikram"/>
+            </div>
+            <div class="col-md-6 project">
+                <h3><a href="./birthday-invite.html" class="btn btn-success my-2">Birthday Invite Project</a></h3>
+                <img src="./birthday.png" class="img-fluid" alt="An invitation birthday with a cake"/>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <a href="./about.html" class="button btn btn-success my-2">About Me</a>
+            <a href="./contact.html" class="button btn btn-success my-2">Contact Me</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Ikram Bichbich. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
